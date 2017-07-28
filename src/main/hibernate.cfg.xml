@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">root</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/trabalho_avi</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="connection.pool.size">30</property>
+        <property name="hibernate.default_schema">trabalho_avi</property>
+        <property name="hibernate.hbm2ddl.auto">none</property>
+        <property name="hibernate.show_sql">false</property>
+        <property name="hibernate.format_sql">true</property>
+
+
+        <mapping class="model.Aluguel"></mapping>
+        <mapping class="model.ApoliceSeguro"></mapping>
+        <mapping class="model.Carro"></mapping>
+        <mapping class="model.Acessorios"></mapping>
+        <mapping class="model.ModeloCarro"></mapping>
+        <mapping class="model.Fabricante"></mapping>
+        <mapping class="model.ModeloCarro"></mapping>
+
+    </session-factory>
+</hibernate-configuration>
